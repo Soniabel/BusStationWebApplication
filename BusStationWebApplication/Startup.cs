@@ -44,7 +44,6 @@ namespace BusStationWebApplication
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-
             });
         }
     }
