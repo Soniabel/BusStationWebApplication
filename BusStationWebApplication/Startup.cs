@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using BusStationWebApplication.Models;
 
 namespace BusStationWebApplication
@@ -38,6 +39,9 @@ namespace BusStationWebApplication
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
 
             app.UseRouting();
 
